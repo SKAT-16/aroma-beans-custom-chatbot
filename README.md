@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# 🤖 Gemini Chatbot React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+A sleek, modern chatbot application built with React and powered by Google's Gemini AI, designed to provide intelligent conversational experiences.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- **Responsive Design**: Seamless UI across desktop and mobile devices
+- **AI-Powered Conversations**: Leveraging Google's Gemini AI for intelligent responses
+- **Context-Aware Interactions**: Maintains conversation history and context
+- **Elegant UI**: Clean, modern interface with smooth animations
+- **Error Handling**: Graceful error management and user feedback
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠 Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Google Gemini API
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+- Google Gemini API Key
+
+## 🚀 Getting Started
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/chatbot-react-gemini.git
+cd chatbot-react-gemini
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Set up environment variables
+   Create a `.env` file in the project root and add:
+
+```
+VITE_API_URL=your_gemini_api_endpoint
+```
+
+### Running the Application
+
+```bash
+npm run dev
+```
+
+## 🔧 Configuration
+
+- Customize chatbot behavior in `src/components/CompanyInfo.ts`
+- Modify UI in Tailwind CSS classes
+- Adjust API interaction in `src/App.tsx`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📞 Contact
+
+Your Name - nathangetachew536@gmail.com
+
+Project Link: [https://aroma-beans-custom-chatbot.vercel.app/](https://github.com/SKAT-16/aroma-beans-custom-chatbot)
+
+---
+
+**Disclaimer**: This project is a demonstration and requires a valid Google Gemini API key for full functionality.
