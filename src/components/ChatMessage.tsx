@@ -1,4 +1,3 @@
-import React from "react";
 import ChatbotIcon from "./ChatbotIcon";
 import { Chat } from "../Types/types";
 

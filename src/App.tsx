@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
 import ChatbotIcon from "./components/ChatbotIcon";
 import ChatForm from "./components/ChatForm";
 import ChatMessage from "./components/ChatMessage";
 import { Chat } from "./Types/types";
 import { companyInfo } from "./components/CompanyInfo";
+import { useState, useRef, useEffect } from "react";
 
 function App() {
   const [chatHistory, setChatHistory] = useState<Chat[]>([
@@ -38,7 +38,8 @@ function App() {
         .trim();
       updateHistory(responseText);
     } catch (error) {
-      updateHistory(error.message, true);
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      updateHistory(errorMessage, true);
     }
   };
 

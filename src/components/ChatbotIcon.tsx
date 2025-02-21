@@ -1,6 +1,4 @@
-import React from "react";
-
-function ChatboxIcon({ className }: { readonly className?: string }) {
+function ChatbotIcon({ className }: { readonly className?: string }) {
   return (
     <svg
       className={className}
@@ -13,4 +11,4 @@ function ChatboxIcon({ className }: { readonly className?: string }) {
   );
 }
 
-export default ChatboxIcon;
+export default ChatbotIcon;
