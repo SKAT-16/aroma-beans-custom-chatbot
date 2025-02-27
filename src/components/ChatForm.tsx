@@ -31,7 +31,7 @@ function ChatForm({
           role: "user",
         },
       ]);
-    }, 400);
+    }, 100);
   };
 
   return (
